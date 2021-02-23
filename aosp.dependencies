@@ -9,11 +9,5 @@
     "target_path" : "vendor/oneplus/oneplus3",
     "branch"      : "eleven",
     "remote"      : "pixel-devices-blobs"
-  },
-  {
-    "repository"  : "Gaurav241/android_device_oppo_common",
-    "target_path" : "device/oppo/common",
-    "branch"      : "eleven-touch",
-    "remote"      : "github"
   }
 ]
