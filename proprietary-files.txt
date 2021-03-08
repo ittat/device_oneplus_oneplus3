@@ -741,6 +741,13 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 -vendor/lib64/libqmiservices.so
 
+# QMI - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/lib/libpdmapper.so
+vendor/lib/libqmi_cci.so
+vendor/lib64/libpdmapper.so
+vendor/lib64/libqmi_cci.so
+vendor/lib64/libqsocket.so
+
 # RIL - from daisy V10.0.18.0 PDLMIXM
 -app/embms/embms.apk:asystem_ext/pp/embms/embms.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -789,6 +796,21 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
 
+# Radio - from LA.UM.9.6.2.r1-03600-89xx.0
+system_ext/framework/qti-telephony-common.jar
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+system_ext/etc/permissions/embms.xml
+system_ext/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
+system_ext/etc/permissions/telephonyservice.xml
+vendor/bin/adpl
+vendor/etc/init/dataadpl.rc
+vendor/etc/init/dataqti.rc
+vendor/etc/init/netmgrd.rc
+vendor/etc/init/vendor.qti.rmt_storage.rc
+vendor/etc/init/vendor.qti.tftp.rc
+
 # IMS - from daisy V10.0.18.0 PDLMIXM
 lib64/com.qualcomm.qti.imscmservice@1.0.so:system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
 lib64/com.qualcomm.qti.imscmservice@2.0.so:system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
@@ -830,6 +852,23 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
+
+# IMS - from LA.UM.9.6.2.r1-03600-89xx.0
+system_ext/lib64/libimscamera_jni.so
+system_ext/lib64/libimsmedia_jni.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+-system_ext/priv-app/ims/ims.apk
+vendor/etc/init/ims_rtp_daemon_legacy.rc
+vendor/etc/init/imsdatadaemon.rc
+vendor/etc/init/imsqmidaemon.rc
+vendor/etc/init/imsrcsd.rc
+vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
+system_ext/lib64/lib-imscamera.so
+system_ext/lib64/lib-imsvideocodec.so
+system_ext/lib64/lib-imsvt.so
+system_ext/lib64/lib-imsvtextutils.so
+system_ext/lib64/lib-imsvtutils.so
+vendor/lib64/lib-imsvtcore.so
 
 # Sensors
 vendor/bin/sensors.qti
