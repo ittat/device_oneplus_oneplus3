@@ -235,3 +235,10 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/oneplus/oneplus3/BoardConfigVendor.mk
+
+
+BUILD_BROKEN_PHONY_TARGETS := true
+BUILD_BROKEN_DUP_RULES := true
+ALLOW_MISSING_DEPENDENCIES := true
+
+export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
