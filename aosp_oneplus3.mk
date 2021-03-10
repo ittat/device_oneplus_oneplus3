@@ -21,10 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-IS_PHONE := true
+#$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+#TARGET_GAPPS_ARCH := arm64
+#TARGET_INCLUDE_STOCK_ARCORE := true
+#IS_PHONE := true
+
+#B2G
+$(call inherit-product, gonk-misc/b2g.mk)
 
 # Recorder
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
