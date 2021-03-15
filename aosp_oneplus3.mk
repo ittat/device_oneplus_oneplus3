@@ -29,7 +29,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
-PRODUCT_NAME := aosp_oneplus3
+PRODUCT_NAME := b2g_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
