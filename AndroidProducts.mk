@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_oneplus3.mk
+    $(LOCAL_DIR)/b2g_oneplus3.mk
